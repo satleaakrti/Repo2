@@ -23,11 +23,11 @@ import './App.css';
 //import TestRun from './Examples/ReduxAssignment/AppRedux';
 // import TestRun from './Examples/ReactReduxDemo/AppRedux';
 //import TestRun from './Examples/ReduxExample/ReduxExample';
-//import TestRun from './Examples/LoginForm/AppLogin'; 
+import TestRun from './Examples/LoginForm/AppLogin'; 
 //import TestRun from './Examples/Forms/NameForm';
 //import TestRun from './Examples/Forms/EssayForm';
 //import TestRun from './Examples/Forms/SelectForm';
-import TestRun from './Examples/Forms/Reservation';
+//import TestRun from './Examples/Forms/Reservation';
 
  class App extends Component{
 

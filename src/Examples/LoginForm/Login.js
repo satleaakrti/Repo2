@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
- 
+import {useHistory} from 'react-router-dom'; 
+
 function Login(props) {
   const username = useFormInput('');
   const password = useFormInput('');
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+  const history = useHistory();
  
   // handle button click of login form
   const handleLogin = () => {
-   props.history.push('/dashboard');
+   history.push('/dashboard');
     
   }
 

@@ -3,7 +3,7 @@ import './App.css';
 import Person from './Section4/Person';
 
 // flexible list
-  class TestRun extends Component{
+  /* class TestRun extends Component{
    
     state = {
       persons : [
@@ -86,10 +86,10 @@ import Person from './Section4/Person';
     }
   }
   
-  export default TestRun; 
+  export default TestRun; */
  
 // List and state
- /*  class TestRun extends Component{
+  class TestRun extends Component{
    
     state = {
       persons: [
@@ -172,4 +172,4 @@ import Person from './Section4/Person';
     }
   }
   
-  export default TestRun;  */
+  export default TestRun;  

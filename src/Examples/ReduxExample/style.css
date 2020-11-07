@@ -1,0 +1,62 @@
+h1, p {
+    font-family: Lato;
+  }
+  
+  .app {
+    border-style: solid;
+    border-color: red;
+    border-width: 3px;
+  }
+  
+  .comp-one {
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px;
+  }
+  
+  .comp-one h3 {
+    color: blue;
+  }
+  
+  .comp-two {
+    border-style: solid;
+    border-color: green;
+    border-width: 2px;
+  }
+  
+  .comp-two h3 {
+    color: green;
+  }
+  
+  .comp-three {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+  }
+  
+  .comp-three h3 {
+    color: black;
+  }
+  
+  .comp-four {
+    border-style: solid;
+    border-color: grey;
+    border-width: 2px;
+  }
+  
+  .comp-four h3 {
+    color: grey;
+  }
+  
+  input {
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+  }
+  
+  button {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+  }
+  

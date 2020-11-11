@@ -1,19 +1,19 @@
  import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
-//import reducer from './store/reducer';
-//import { createStore } from 'redux';
-//import { Provider } from 'react-redux';
+import formAppReducer from './Examples/Assignment/FormAppReducer';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import ReduxApp from './Examples/Assignment/ReduxApp';
 
-//const store = createStore(reducer);
+ const store = createStore(formAppReducer);
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store= {store}>
+    <ReduxApp />
+  </Provider>,
   document.getElementById('root')
 );
 
@@ -21,6 +21,27 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister(); 
+
+// for AppRedux
+/* import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import TestRun from './ReduxExampleFirst/AppRedux';
+import * as serviceWorker from './serviceWorker';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import reducer from './ReduxExampleFirst/reducer';
+
+ const store = createStore(reducer);
+
+
+ReactDOM.render(
+  <Provider store= {store}>
+    <TestRun />
+  </Provider>,
+  document.getElementById('root')
+);
+serviceWorker.unregister() */
 
  /* import React from 'react';
 import ReactDOM from 'react-dom';

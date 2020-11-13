@@ -6,7 +6,13 @@ import formAppReducer from './Examples/Assignment/FormAppReducer';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import ReduxApp from './Examples/Assignment/ReduxApp';
+/* import { reducer as formReducer } from 'redux-form';
+import FormApp from './Examples/Assignment/FormApp';
 
+FormApp = reduxForm({
+  form: 'signIn',
+})(FormApp);
+*/
  const store = createStore(formAppReducer);
 
 

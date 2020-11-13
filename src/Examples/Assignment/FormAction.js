@@ -1,6 +1,7 @@
 import {DETAILS} from './FormType';
 
  const details = (data) => {
+   console.log(data);
     return (dispatch)=>{
         dispatch({
             type: DETAILS,

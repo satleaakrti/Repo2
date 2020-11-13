@@ -1,7 +1,12 @@
 import {DETAILS} from './FormType';
 
 const initialState ={
-    userData : {}
+   // userData : {}
+   fname : '',
+   lname: '',
+   email : '',
+   password : '',
+   contact : ''
    }
 
    const formAppReducer= (state=initialState, action) => {
@@ -18,7 +23,12 @@ const initialState ={
           case DETAILS:
       return {
         ...state,
-        userData : action.payload
+       // userData : action.payload
+       fname : action.fname,
+       lname : action.lname,
+       email : action.email,
+       password : action.password,
+       contact : action.contact
       }
           
           default:

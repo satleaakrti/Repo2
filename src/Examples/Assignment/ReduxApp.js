@@ -13,10 +13,10 @@ class TestRun extends Component{
           <BrowserRouter>
         <div>
           <div className="header">
-            <div><NavLink exact activeClassName="active" to="/">Home</NavLink></div>
-            <div>
-            <NavLink activeClassName="active" to="/formApp">Click</NavLink><small></small>
-            </div>
+            <NavLink exact activeClassName="active" to="/">Home</NavLink>
+            &nbsp; &nbsp; &nbsp;
+            <NavLink activeClassName="active" to="/formApp">Click</NavLink>
+            
             </div>
             <div className="content">
             <Switch>

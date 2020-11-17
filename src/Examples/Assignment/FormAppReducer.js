@@ -24,11 +24,11 @@ const initialState ={
       return {
         ...state,
        // userData : action.payload
-       fname : action.fname,
-       lname : action.lname,
-       email : action.email,
-       password : action.password,
-       contact : action.contact
+       fname : state.fname,
+       lname : state.lname,
+       email : state.email,
+       password : state.password,
+       contact : state.contact
       }
           
           default:

@@ -5,14 +5,14 @@ import details from './FormAction';
 //import formAppReducer from './FormAppReducer';
 
 const submit = (props) => {
-
+    console.log(props);
     return(
         
         <div>
-       <h3>FirstName: {this.props.fname}</h3>
-       <h3>LastName: {this.props.lname}</h3>
-       <h3>Email : {this.props.email}</h3>
-       <h3>Password: {this.props.password}</h3>
+       <h3>FirstName: {props.firstName}</h3>
+       <h3>LastName: {props.lastName}</h3>
+       <h3>Email : {props.email}</h3>
+       <h3>Password: {props.password}</h3>
        <h3>Contact: {this.props.contact}</h3>
         </div>
     );
@@ -34,7 +34,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onDetails: () => {dispatch(details) }
+        onDetails: (data) => {dispatch(details(data)) }
        
     }
 };

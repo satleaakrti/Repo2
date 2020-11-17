@@ -31,7 +31,7 @@ import {useHistory} from 'react-router-dom';
 
     return(
        // <Provider store={store}>
-        <div className= "FormApp">
+    <div className= "FormApp">
         <h3>Hii, Welcome to React App</h3>
         <div >  
         <label> FirstName: </label>
@@ -69,7 +69,8 @@ import {useHistory} from 'react-router-dom';
            <input type="text" 
             name= "contactNo" 
             value = {props.contact}          />
-                     </div>
+                     </div> 
+                    
         <p>
         <input type="button" value= "Save"onClick={handleClick}  />
         </p>

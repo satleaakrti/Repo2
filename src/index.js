@@ -1,11 +1,12 @@
- import React from 'react';
+  import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import formAppReducer from './Examples/Assignment/FormAppReducer';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import ReduxApp from './Examples/Assignment/ReduxApp';
+//import ReduxApp from './Examples/Assignment/ReduxApp';
+import TestRun from './Examples/Assignment/ReduxApp';
 /* import { reducer as formReducer } from 'redux-form';
 import FormApp from './Examples/Assignment/FormApp';
 
@@ -13,20 +14,39 @@ FormApp = reduxForm({
   form: 'signIn',
 })(FormApp);
 */
+// for Assignment of redux
  const store = createStore(formAppReducer);
 
 
 ReactDOM.render(
   <Provider store= {store}>
-    <ReduxApp />
+    <TestRun />
+  </Provider>,
+  document.getElementById('root')
+); 
+
+serviceWorker.unregister(); 
+
+// for AppReduxFirst
+/* import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import TestRun from './Examples/ReduxExampleSecond/AppReduxFirst';
+import * as serviceWorker from './serviceWorker';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import reducer from './Examples/ReduxExampleSecond/reducer';
+
+ const store = createStore(reducer);
+
+
+ReactDOM.render(
+  <Provider store= {store}>
+    <TestRun />
   </Provider>,
   document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister(); 
+serviceWorker.unregister() */
 
 // for AppRedux
 /* import React from 'react';

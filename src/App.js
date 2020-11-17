@@ -21,15 +21,16 @@ import './App.css';
 //import TestRun from './Examples/Assignment3';
 //import TestRun from './Examples/Assignment4/Assignment4';
 //import TestRun from './Examples/ReduxAssignment/AppRedux';
- //import TestRun from './Examples/ReactReduxDemo/AppRedux';
+//import TestRun from './Examples/ReactReduxDemo/AppRedux';
 //import TestRun from './Examples/ReduxExample/ReduxExample';
 //import TestRun from './Examples/LoginForm/AppLogin'; 
 //import TestRun from './Examples/Forms/NameForm';
 //import TestRun from './Examples/Forms/EssayForm';
 //import TestRun from './Examples/Forms/SelectForm';
 //import TestRun from './Examples/Forms/Reservation';
- import TestRun from './Examples/Assignment/ReduxApp';
+import TestRun from './Examples/Assignment/ReduxApp';
 //import TestRun from './ReduxExampleFirst/AppRedux';
+//import TestRun from './Examples/ReduxExampleSecond/AppReduxFirst';
 
  class App extends Component{
 

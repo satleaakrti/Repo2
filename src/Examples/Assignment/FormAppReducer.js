@@ -24,7 +24,7 @@ const initialState ={
       return {
         ...state,
        // userData : action.payload
-       fname : state.fname,
+       fname : action.payload,
        lname : state.lname,
        email : state.email,
        password : state.password,

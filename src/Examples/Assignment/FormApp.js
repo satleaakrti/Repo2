@@ -6,7 +6,7 @@ import React from 'react';
 import {Route, Switch, BrowserRouter} from 'react-router-dom';
 import Submit from './Submit';
 import {useHistory} from 'react-router-dom'; 
-//import formAppReducer from './FormAppReducer';
+import formAppReducer from './FormAppReducer';
 
   const FormApp = (props) => {
 
@@ -37,7 +37,7 @@ import {useHistory} from 'react-router-dom';
         <label> FirstName: </label>
             <input type="text"
             name= "firstName"
-            value={props.fname}
+            value={formAppReducer.fname}
             /> 
           </div>
           <div>
@@ -45,7 +45,7 @@ import {useHistory} from 'react-router-dom';
         <input
           type="text"
           name="lastName"
-          value ={props.lname}
+          value ={formAppReducer.lname}
           />
          </div>
 
@@ -53,14 +53,14 @@ import {useHistory} from 'react-router-dom';
           <label> Email: </label>
         <input type="text"  
             name= "email"
-             value= {props.email}          />
+             value= {formAppReducer.email}          />
           </div>
 
           <div>
           <label> Password:   </label>
          <input type="password" 
             name= "password"
-            value = {props.password}
+            value = {formAppReducer.password}
              />
           </div>
           
@@ -68,7 +68,7 @@ import {useHistory} from 'react-router-dom';
           <label> Contact No.: </label>
            <input type="text" 
             name= "contactNo" 
-            value = {props.contact}          />
+            value = {formAppReducer.contact}          />
                      </div> 
                     
         <p>

@@ -7,13 +7,8 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 //import ReduxApp from './Examples/Assignment/ReduxApp';
 import TestRun from './Examples/Assignment/ReduxApp';
-/* import { reducer as formReducer } from 'redux-form';
-import FormApp from './Examples/Assignment/FormApp';
 
-FormApp = reduxForm({
-  form: 'signIn',
-})(FormApp);
-*/
+// import FormApp from './Examples/Assignment/FormApp';
 // for Assignment of redux
  const store = createStore(formAppReducer);
 
@@ -25,10 +20,10 @@ ReactDOM.render(
   document.getElementById('root')
 ); 
 
-serviceWorker.unregister(); 
+serviceWorker.unregister();
 
 // for AppReduxFirst
-/* import React from 'react';
+  /* import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import TestRun from './Examples/ReduxExampleSecond/AppReduxFirst';

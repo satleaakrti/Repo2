@@ -8,12 +8,13 @@ const submit = (props) => {
     console.log(props);
     return(
         
-        <div>
+        <div className= "submit">
+        <h1>This is Redux Example:</h1>
        <h3>FirstName: {props.firstName}</h3>
        <h3>LastName: {props.lastName}</h3>
        <h3>Email : {props.email}</h3>
        <h3>Password: {props.password}</h3>
-       <h3>Contact: {this.props.contact}</h3>
+       <h3>Contact: {props.contact}</h3>
         </div>
     );
 

@@ -6,8 +6,8 @@ import {connect} from 'react-redux' ;
       return (
        <div className= "TestRun">
        <h1>This is redux example</h1>
-       <h3>My Name is: {props.myName}</h3>
-       <h3>My age is: {props.myAge}</h3>
+        <h4>{props.firstName}</h4>
+        
        <button onClick={() =>props.changeName("Mark")}>Change</button>
        </div>
       );
@@ -16,14 +16,17 @@ import {connect} from 'react-redux' ;
 
   const mapStateToProps = state => {
     return {
-       myName: state.name,
-       myAge: state.age
+       firstName: state.fname,
+       lastName: state.lname,
+       email: state.email,
+       password: state.password,
+       contact: state.contact,
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-        changeName: (name) => {dispatch({type: "CHANGE_NAME", payload:name}) }
+        changeName: (fname) => {dispatch({type: "CHANGE_NAME", payload:fname}) }
        
     }
 };

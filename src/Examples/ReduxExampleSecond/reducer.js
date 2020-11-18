@@ -1,13 +1,20 @@
 const iState = {
-    name: "John",
-    age: "22"
+    fname: "John",
+    lname: "Sinha",
+    email: "abc@gmail.com",
+    password: "john",
+    contact: "9879798700"
 }
 
 const reducer = (state = iState, action) => {
     if(action.type === "CHANGE_NAME"){
         return {
-            name: action.payload,
-            age: state.age
+            fname: action.payload,
+            lname: state.lname,
+            email: state.email,
+            password: state.password,
+            contact: state.contact
+            
         }
     }
    return state;

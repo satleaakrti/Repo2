@@ -1,16 +1,18 @@
-  import React from 'react';
+   // Redux App
+  /* import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import formAppReducer from './Examples/Assignment/FormAppReducer';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 //import ReduxApp from './Examples/Assignment/ReduxApp';
 import TestRun from './Examples/Assignment/ReduxApp';
+import thunk from 'redux-thunk';
 
 // import FormApp from './Examples/Assignment/FormApp';
 // for Assignment of redux
- const store = createStore(formAppReducer);
+ const store = createStore(formAppReducer, applyMiddleware(thunk));
 
 
 ReactDOM.render(
@@ -20,7 +22,55 @@ ReactDOM.render(
   document.getElementById('root')
 ); 
 
-serviceWorker.unregister();
+serviceWorker.unregister();  */
+
+// MiddleWareExmpl
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import * as serviceWorker from './serviceWorker';
+import reducer from './Examples/MiddlewareExmpl/reducer';
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+//import ReduxApp from './Examples/Assignment/ReduxApp';
+import TestRun from './Examples/MiddlewareExmpl/AppExmpl';
+import thunk from 'redux-thunk';
+
+// import FormApp from './Examples/Assignment/FormApp';
+// for Assignment of redux
+ const store = createStore(reducer, applyMiddleware(thunk));
+
+
+ReactDOM.render(
+  <Provider store= {store}>
+    <TestRun />
+  </Provider>,
+  document.getElementById('root')
+); 
+
+serviceWorker.unregister(); 
+
+// ReduxFormAssignment - ReduxFornApp
+/* import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import * as serviceWorker from './serviceWorker';
+import formReducer from './Examples/ReduxFormAssignment/FormReducer';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import TestRun from './Examples/ReduxFormAssignment/ReduxFormApp';
+
+ const store = createStore(formReducer);
+
+
+ReactDOM.render(
+  <Provider store= {store}>
+    <TestRun />
+  </Provider>,
+  document.getElementById('root')
+); 
+
+serviceWorker.unregister(); */
 
 // for AppReduxFirst
   /* import React from 'react';

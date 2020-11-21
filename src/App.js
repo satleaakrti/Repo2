@@ -30,9 +30,10 @@ import './App.css';
 //import TestRun from './Examples/Forms/Reservation';
 //import TestRun from './Examples/Assignment/ReduxApp';
 //import TestRun from './ReduxExampleFirst/AppRedux';
-//import TestRun from './Examples/ReduxExampleSecond/AppReduxFirst';
+import TestRun from './Examples/ReduxExampleSecond/AppReduxFirst';
 //import TestRun from './Examples/ReduxFormAssignment/ReduxFormApp';
-import TestRun from './Examples/MiddlewareExmpl/AppExmpl';
+//import TestRun from './Examples/MiddlewareExmpl/AppExmpl';
+//import TestRun from './Examples/ReactRouter/Example';
 
  class App extends Component{
 

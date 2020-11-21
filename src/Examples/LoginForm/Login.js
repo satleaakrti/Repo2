@@ -13,7 +13,9 @@ function Login(props) {
    history.push('/dashboard');
     
   }
-
+  const handleRegister = () => {
+    history.push('/register');
+  }
  
   return (
     <div>
@@ -27,7 +29,8 @@ function Login(props) {
         <input type="password" {...password} autoComplete="new-password" />
       </div>
       {error && <><small style={{ color: 'red' }}>{error}</small><br /></>}<br />
-      <input type="button" value={loading ? 'Loading...' : 'Login'} onClick={handleLogin} disabled={loading} /><br />
+      <input type="button" value={loading ? 'Loading...' : 'Login'} onClick={handleLogin} disabled={loading} />
+      <input type="button" value={loading ? 'Loading...' : 'Register'} onClick={handleRegister} disabled={loading} /><br />
     </div>
   );
 }

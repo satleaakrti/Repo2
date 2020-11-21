@@ -3,11 +3,17 @@ import {connect} from 'react-redux' ;
 
   const TestRun =(props) =>{
       console.log(props);
+     const showData = () => {
+    return(<h1>TEST DATA</h1>);
+    }
       return (
        <div className= "TestRun">
        <h1>This is redux example</h1>
+       {showData()}
         <h4>{props.firstName}</h4>
-        
+         <h4>{props.lastName}</h4>
+        <h4>{props.email}</h4>
+         
        <button onClick={() =>props.changeName("Mark")}>Change</button>
        </div>
       );

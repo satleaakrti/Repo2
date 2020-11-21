@@ -1,4 +1,3 @@
-
 import React , {Component} from 'react';
 import {connect} from 'react-redux';
 import {ageDown, ageUp} from './Action';
@@ -9,8 +8,8 @@ class TestRun extends Component{
          <div className= "TestRun">
          <spam>Your Age: {this.props.age}</spam>
        
-         <button onClick={this.props.onAgeUp}>Age Up</button>
-         <button onClick={this.props.onAgeDown}>Age Down</button>
+         <button onClick={this.props.ageUp(1)}>Age Up</button>
+         <button onClick={this.props.ageDown(1)}>Age Down</button>
          </div>
      );
  }
@@ -18,14 +17,14 @@ class TestRun extends Component{
 
 const mapStateToProps = state => {
     return {
-        age: state.age
+        age: state.reducer.age
    };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-       onAgeUp: () => dispatch(ageUp(1)),
-       onAgeDown: () => dispatch(ageDown(1))
+       ageUp: (val) => dispatch(ageUp(val)),
+       ageDown: (val) => dispatch(ageDown(val))
        
     };
 };

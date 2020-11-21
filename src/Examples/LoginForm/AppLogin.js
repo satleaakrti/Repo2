@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
 import Login from './Login';
 import Dashboard from './Dashboard';
 import Home from './Home';
+import Register from './Register';
  
 class TestRun extends Component{
     render(){
@@ -25,6 +26,7 @@ class TestRun extends Component{
               <Route exact path="/" component={Home} />
               <Route path="/login" component={Login} />
               <Route path="/dashboard" component={Dashboard} />
+              <Route path="/register" component={Register} />
             </Switch>
           </div>
         </div>

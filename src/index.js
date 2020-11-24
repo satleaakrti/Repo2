@@ -1,5 +1,5 @@
    // Redux App
-/* import React from 'react';
+ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
@@ -22,7 +22,7 @@ ReactDOM.render(
   document.getElementById('root')
 ); 
 
-serviceWorker.unregister();  */
+serviceWorker.unregister();  
 
 // MiddleWareExmpl
 /* import React from 'react';
@@ -73,7 +73,7 @@ ReactDOM.render(
 serviceWorker.unregister(); */
 
 // for AppReduxFirst
-  import React from 'react';
+/*import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import TestRun from './Examples/ReduxExampleSecond/AppReduxFirst';
@@ -91,7 +91,7 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
-serviceWorker.unregister() 
+serviceWorker.unregister() */
 
 // for AppRedux
 /* import React from 'react';

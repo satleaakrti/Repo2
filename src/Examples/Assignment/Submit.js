@@ -5,7 +5,7 @@ import details from './FormAction';
 //import formAppReducer from './FormAppReducer';
 
 const submit = (props) => {
-    console.log(props);
+    //console.log(props);
     return(
         
         <div className= "submit">
@@ -19,8 +19,6 @@ const submit = (props) => {
     );
 
 }
-
-
 
 const mapStateToProps = state => {
     return {

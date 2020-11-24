@@ -1,5 +1,4 @@
 import React from 'react';
-import formReducer from './FormReducer';
 import details from './ActionForm';
 import {connect} from 'react-redux';
 
@@ -9,11 +8,16 @@ const TestRun = (props) => {
        
       <div className= "FormApp">
           <h3>Hii, Welcome to React App</h3>
+          <h3>FirstName: {props.firstName}</h3>
+       <h3>LastName: {props.lastName}</h3>
+       <h3>Email : {props.email}</h3>
+       <h3>Password: {props.password}</h3>
+       <h3>Contact: {props.contact}</h3>
           <div >  
           <label> FirstName: </label>
               <input type="text"
               name= "firstName"
-              value={formReducer.fname}
+              value={props.fname}
               /> 
             </div>
             <div>
@@ -21,7 +25,7 @@ const TestRun = (props) => {
           <input
             type="text"
             name="lastName"
-            value ={formReducer.lname}
+            value={props.lname}
             />
            </div>
   
@@ -29,14 +33,15 @@ const TestRun = (props) => {
             <label> Email: </label>
           <input type="text"  
               name= "email"
-               value= {formReducer.email}          />
+              value={props.email}
+                   />
             </div>
   
             <div>
             <label> Password:   </label>
            <input type="password" 
               name= "password"
-              value = {formReducer.password}
+              value={props.password}
                />
             </div>
             
@@ -44,17 +49,22 @@ const TestRun = (props) => {
             <label> Contact No.: </label>
              <input type="text" 
               name= "contactNo" 
-              value = {formReducer.contact}          />
+              value={props.contact}
+                     />
                        </div> 
                       
           <p>
-          <button onClick={() =>props.onDetails()}>Click</button>
+          <button onClick={() => handleSave()}>Click</button>
           </p>
         
           </div>
          // </Provider>
       );
       
+  }
+
+  const  handleSave= (props) => {
+       props.onDetails();
   }
 
   const mapStateToProps = state => {
@@ -70,7 +80,7 @@ const TestRun = (props) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onDetails: (fname) => {dispatch(details(fname)) }
+        onDetails: (fname) => dispatch(details(fname)) 
        
     }
 };

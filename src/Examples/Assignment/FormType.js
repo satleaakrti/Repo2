@@ -1,2 +1,5 @@
-export const DETAILS = 'DETAILS';
+export const FORM_TYPE = {
+    DETAILS : 'DETAILS'
+}
+
 

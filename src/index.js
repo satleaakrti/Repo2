@@ -1,5 +1,5 @@
    // Redux App
- import React from 'react';
+  import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
@@ -23,6 +23,32 @@ ReactDOM.render(
 ); 
 
 serviceWorker.unregister();  
+
+// Redux Task- App Task
+/* import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import * as serviceWorker from './serviceWorker';
+import AppReducer from './Examples/ReduxTask/AppReducer';
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+//import ReduxApp from './Examples/Assignment/ReduxApp';
+import TestRun from './Examples/ReduxTask/AppTask';
+import thunk from 'redux-thunk';
+
+// import FormApp from './Examples/Assignment/FormApp';
+// for Assignment of redux
+ const store = createStore(AppReducer, applyMiddleware(thunk));
+
+
+ReactDOM.render(
+  <Provider store= {store}>
+    <TestRun />
+  </Provider>,
+  document.getElementById('root')
+); 
+
+serviceWorker.unregister();  */
 
 // MiddleWareExmpl
 /* import React from 'react';
@@ -167,3 +193,30 @@ import App from './App';
 ReactDOM.render( <App />, document.getElementById('root')); 
 
 serviceWorker.unregister(); */
+
+//Redux-Trigger - SignInForm
+/* import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { createStore } from "redux";
+import SignInForm from "./Examples/ReduxTrigger/SignInForm";
+import Button from "./Examples/ReduxTrigger/Button";
+
+import reducer from "./Examples/ReduxTrigger/reducer";
+
+const store = createStore(reducer);
+
+function App() {
+  return (
+    <Provider store={store}>
+      <div className="App">
+        <h1>Sign In To Your Account</h1>
+        <SignInForm />
+        <Button />
+      </div>
+    </Provider>
+  );
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement); */

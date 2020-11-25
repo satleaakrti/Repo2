@@ -5,7 +5,8 @@ import details from './FormAction';
 //import formAppReducer from './FormAppReducer';
 
 const submit = (props) => {
-    //console.log(props);
+    console.log(props);
+    console.log(props.firstName);
     return(
         
         <div className= "submit">
@@ -22,7 +23,7 @@ const submit = (props) => {
 
 const mapStateToProps = state => {
     return {
-    //    userData : state.userData,
+      // userData : state.userData,
     firstName : state.fname,
     lastName : state.lname,
     email : state.email,
@@ -31,11 +32,11 @@ const mapStateToProps = state => {
     };
 };
 
-const mapDispatchToProps = dispatch => {
-    return {
-        onDetails: (data) => {dispatch(details(data)) }
+ const mapDispatchToProps = dispatch => {
+        return {
+         onDetails: (data) => dispatch(details(data)) 
        
-    }
-};
+   }
+ };
 
-export default connect(mapStateToProps,mapDispatchToProps)(submit );
+export default connect(mapStateToProps, mapDispatchToProps)(submit );

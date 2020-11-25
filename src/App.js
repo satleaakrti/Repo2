@@ -34,6 +34,8 @@ import TestRun from './Examples/Assignment/ReduxApp';
 //import TestRun from './Examples/ReduxFormAssignment/ReduxFormApp';
 //import TestRun from './Examples/MiddlewareExmpl/AppExmpl';
 //import TestRun from './Examples/ReactRouter/Example';
+//import TestRun from './Examples/ReduxTask/AppTask';
+//import TestRun from './Examples/ReduxTrigger/SignInForm';
 
  class App extends Component{
 

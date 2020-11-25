@@ -1,11 +1,12 @@
-import {DETAILS} from './FormType';
+import FORM_TYPE from './FormType';
 
- const details = (data) => {
+   const details = (data) => {
    console.log(data);
     return (dispatch)=>{
         dispatch({
-            type: DETAILS,
-           payload : data
+            type: FORM_TYPE.DETAILS,
+            payload: data
+         
         })
       }
     

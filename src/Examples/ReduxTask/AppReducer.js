@@ -1,7 +1,8 @@
-import {DETAILS} from './FormType';
+
 
 const initialState ={
-    userData : { fname : '',
+    userData : { 
+    fname : '',
     lname: '',
     email : '',
     password : '',
@@ -13,10 +14,10 @@ const initialState ={
    const formAppReducer= (state=initialState, action) => {
        
       switch(action.type){
-          case DETAILS:
+          case 'DETAILS':
       return {
         ...state,
-        userData : action.payload
+      userData: action.payload
       }
           
           default:

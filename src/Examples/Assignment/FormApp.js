@@ -4,7 +4,7 @@ import React from 'react';
 //import store from './store';
 //import {connect} from 'react-redux';
 import {Route, Switch, BrowserRouter} from 'react-router-dom';
-import Submit from './Submit';
+import submit from './Submit';
 import {useHistory} from 'react-router-dom'; 
 
   const FormApp = (props) => {
@@ -75,7 +75,7 @@ import {useHistory} from 'react-router-dom';
         </p>
         <BrowserRouter>
         <Switch>
-        <Route path="/submit" component={Submit} /></Switch>
+        <Route path="/submit" component={submit} /></Switch>
         </BrowserRouter>
       
         </div>

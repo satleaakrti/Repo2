@@ -1,4 +1,4 @@
-import {DETAILS} from './FormType';
+import { FORM_TYPE} from './FormType';
 
 const initialState ={
    // userData : {}
@@ -20,7 +20,7 @@ const initialState ={
             password=this.state.password,
             contact=this.state.contact
           } */
-          case DETAILS:
+          case FORM_TYPE.DETAILS:
       return {
         ...state,
        // userData : action.payload

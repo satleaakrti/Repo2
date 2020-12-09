@@ -1,5 +1,5 @@
    // Redux App
-  import React from 'react';
+ /* import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
@@ -22,7 +22,34 @@ ReactDOM.render(
   document.getElementById('root')
 ); 
 
-serviceWorker.unregister();  
+serviceWorker.unregister();  */
+
+//ReduxApp - AssignmentCopy
+
+/* import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import * as serviceWorker from './serviceWorker';
+import formAppReducer from './Examples/AssignmentCopy/FormAppReducer';
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+//import ReduxApp from './Examples/Assignment/ReduxApp';
+import TestRun from './Examples/AssignmentCopy/ReduxApp';
+import thunk from 'redux-thunk';
+
+// import FormApp from './Examples/Assignment/FormApp';
+// for Assignment of redux
+ const store = createStore(formAppReducer, applyMiddleware(thunk));
+
+
+ReactDOM.render(
+  <Provider store= {store}>
+    <TestRun />
+  </Provider>,
+  document.getElementById('root')
+); 
+
+serviceWorker.unregister();  */
 
 // Redux Task- App Task
 /* import React from 'react';
@@ -220,3 +247,15 @@ function App() {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement); */
+
+// Student
+
+import React from "react";
+import ReactDOM from "react-dom";
+import './index.css';
+import * as serviceWorker from './serviceWorker';
+import App from './App';
+
+ReactDOM.render( <App />, document.getElementById('root')); 
+
+serviceWorker.unregister(); 

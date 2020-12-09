@@ -28,7 +28,8 @@ import './App.css';
 //import TestRun from './Examples/Forms/EssayForm';
 //import TestRun from './Examples/Forms/SelectForm';
 //import TestRun from './Examples/Forms/Reservation';
-import TestRun from './Examples/Assignment/ReduxApp';
+//import TestRun from './Examples/Assignment/ReduxApp';
+//import TestRun from './Examples/AssignmentCopy/ReduxApp';
 //import TestRun from './ReduxExampleFirst/AppRedux';
 //import TestRun from './Examples/ReduxExampleSecond/AppReduxFirst';
 //import TestRun from './Examples/ReduxFormAssignment/ReduxFormApp';
@@ -36,6 +37,7 @@ import TestRun from './Examples/Assignment/ReduxApp';
 //import TestRun from './Examples/ReactRouter/Example';
 //import TestRun from './Examples/ReduxTask/AppTask';
 //import TestRun from './Examples/ReduxTrigger/SignInForm';
+import TestRun from './Student/Student';
 
  class App extends Component{
 

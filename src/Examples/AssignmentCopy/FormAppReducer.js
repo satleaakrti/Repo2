@@ -1,12 +1,12 @@
-import  FORM_TYPE from './FormType';
+import { FORM_TYPE} from './FormType';
 
 const initialState ={
-   // userData : {}
-   fname : '',
-   lname: '',
-   email : '',
-   password : '',
-   contact : ''
+   userData : {}
+  //  fname : '',
+  //  lname: '',
+  //  email : '',
+  //  password : '',
+  //  contact : ''
    }
 
    const formAppReducer= (state=initialState, action) => {
@@ -23,12 +23,12 @@ const initialState ={
           case FORM_TYPE.DETAILS:
       return {
         ...state,
-       // userData : action.payload
-       fname : action.payload,
-       lname : state.lname,
-       email : state.email,
-       password : state.password,
-       contact : state.contact
+       userData : action.payload
+      //  fname : action.payload,
+      //  lname : state.lname,
+      //  email : state.email,
+      //  password : state.password,
+      //  contact : state.contact
       }
           
           default:

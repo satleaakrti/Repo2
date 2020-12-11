@@ -3,7 +3,7 @@
     import axios from 'axios';  
     import Table from './Table';  
       
-    export default class Studentlist extends Component {  
+    class Studentlist extends Component {  
       
       constructor(props) {  
           super(props);  
@@ -49,3 +49,5 @@
           );  
         }  
       }  
+
+  export default Studentlist;

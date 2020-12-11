@@ -2,7 +2,7 @@
     import React from 'react';   
     import { Container, Col, Form, Row, FormGroup, Label, Input, Button } from 'reactstrap';  
     import axios from 'axios'  
-    //import './Addstudent.css'  
+    import './AddStudent.css'  
     class Edit extends React.Component {  
         constructor(props) {  
             super(props)  
